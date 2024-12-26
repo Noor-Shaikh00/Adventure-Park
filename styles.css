@@ -1,0 +1,168 @@
+/* Styling Css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 300px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features, .adventure-list, .holiday-area, .about-area {
+    margin: 20px 0;
+}
+
+.features h3, .adventure-list h2, .holiday-area h2, .about-area h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feature, .adventure-item, .holiday-area, .about-area {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    text-align: center;
+}
+
+.feature img, .adventure-item img, .holiday-image, .about-image, .contact-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+/* Contact form styles */
+form {
+    max-width: 600px;
+    margin: 20px auto; /* Center the form */
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .feature, .adventure-item, .holiday-area, .about-area {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .holiday-area, .about-area {
+        display: block; /* Stack holiday areas vertically */
+    }
+
+    .holiday-image, .about-image {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* Adventure specific styles */
+.adventure-area {
+    margin: 20px 0;
+}
+
+.adventure-image {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+@media (min-width: 768px) {
+    .adventure-area {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .adventure-image {
+        width: 40%; /* Adjust width for larger screens */
+        margin-right: 20px; /* Space between image and text */
+    }
+
+    .adventure-area ul {
+        flex: 1; /* Allow the list to take the remaining space */
+    }
+}
